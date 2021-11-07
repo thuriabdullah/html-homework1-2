@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* .products .card img{width: 150px; display: block;margin: auto;} */
+
+.cart .cart-item{
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.cart .cart-item > div{
+  height: 95%;
+  align-items: center;
+  margin: 10px;
+}
+.cart .cart-item img{
+  height: 100%;
+  margin-right: 15px
+}
+
+.product-details .details{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cart-item-middle , .cart-item-right{
+  flex-direction:row;
+  justify-content: left;
+}
+
+.cart-item-middle{
+  flex:1
+
+}
+
+.cart-item h5{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 1000px){
+
+  .cart-item{
+    min-height: 200px !important;
+  }
+
+  .cart-item-middle , .cart-item-right{
+    flex-direction:column
+  }
+
+}
